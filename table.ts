@@ -29,8 +29,8 @@ function padLeft(word: string, totalLength: number): string {
 }
 
 function printResults(wordPairs: Array<[string, string]>): void {
-  const longestWordLength = validWordsPairs
-    .map(([prefixWord, suffixWord]) => prefixWord)
+  const longestWordLength = wordPairs
+    .map(([prefixWord, _]) => prefixWord)
     .reduce((currentMax, word) => word.length > currentMax ? word.length : currentMax, 0);
   assert(longestWordLength > 2);
   validWordsPairs.forEach(([prefixWord, suffixWord]) => {
