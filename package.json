@@ -9,6 +9,9 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@types/node": "^10.12.12"
+    "@types/node": "^10.12.12",
+    "@types/pluralize": "0.0.29",
+    "csv-parse": "^4.2.0",
+    "pluralize": "^7.0.0"
   }
 }
